@@ -407,11 +407,11 @@ body.body-index {
 }
 
 body.body-classes {
-  background-color: #4e7470;
+  background-color: #c3c7ccef;
 }
 
 body.body-contact {
-  background-color: #003f54;
+  background-color: #c3c7ccef;
 }
 
 .container.hero-container-1 {
@@ -1544,7 +1544,7 @@ button.form-button:hover {
     padding-top: 0;
     padding-bottom: 0;
     width: 100%;
-    background-color: #003f54;
+    background-color: #c3c7ccef;
     opacity: 0;
     -webkit-transition-duration: .3s;
        -moz-transition-duration: .3s;
