@@ -1667,21 +1667,21 @@ button.form-button:hover {
   }
 }
 
-@media screen and (max-width: 35.3125rem) {
+@media screen and (max-width: 8.3125rem) {
   /* Text Elements */
 
   h1.hero-home-heading {
-    font-size: 72px;
+    font-size: 15px;
 
-    -webkit-text-stroke-width: .55vw;
+    -webkit-text-stroke-width: .30vw;
   }
 
   h2.hero-subheading {
-    font-size: 6.52vw;
+    font-size: 4.52vw;
   }
 
   h2.hero-studio-heading {
-    font-size: 6.52vw;
+    font-size: 4.52vw;
   }
 
   h2.heading-stroke {
@@ -1730,7 +1730,7 @@ button.form-button:hover {
   /* Text Elements */
 
   h1.hero-home-heading {
-    font-size: 15.96vw;
+    font-size: 8.96vw;
   }
 
   p.paragraph.big-text-paragraph {
@@ -1748,7 +1748,7 @@ button.form-button:hover {
   }
 
   h2.hero-subheading {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   h2.section-title {
