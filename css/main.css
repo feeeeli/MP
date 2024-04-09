@@ -78,7 +78,7 @@ h2.heading-stroke {
 }
 
 h2.blue-stroke.heading-stroke {
-  -webkit-text-stroke-color: #00a6a3;
+  -webkit-text-stroke-color: #c3c7ccef;
 }
 
 h4.headline-footer {
@@ -150,7 +150,7 @@ p.paragraph.big-text-paragraph.yellow {
 }
 
 p.paragraph.big-text-paragraph.blue {
-  color: #00a6a3;
+  color: #c3c7ccef;
 }
 
 a.link-text.nav-link-footer {
