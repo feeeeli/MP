@@ -43,18 +43,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
       </div>
     </div>
     <div class="container image-main-1"></div>
+
+    <div class="cookie-container" id="cookieContainer">
+      Diese Website verwendet Cookies, um sicherzustellen, dass Sie die bestmögliche Erfahrung auf unserer Website erhalten. 
+      <button class="cookie-btn" onclick="acceptCookies()">Zustimmen</button>
+  </div>
+  
+  <script>
+  function acceptCookies() {
+      document.getElementById("cookieContainer").style.display = "none";
+      // Hier können Sie Ihren Code einfügen, um Cookies zu setzen oder andere Aktionen auszuführen.
+  }
+  </script>
+  
+
+
+
   </main>
   <footer class="container footer-1 black-footer">
     <div class="container"><a href="index.html" class="responsive-picture picture-link-footer">
-        <picture><img alt="Placeholder Picture" src="./images/start.jpg"></picture>
+        <picture><img alt="Placeholder Picture" src="./images/mp.png"></picture>
       </a>
       <div class="container fotter-3-columns">
         <div class="container description-logos-footer">
-          <h4 class="headline-footer">MP Kunsthandwerk individuelle Kunst by Martin Pistorius</h4>
+          <h4 class="headline-footer">MP Kunsthandwerk by Martin Pistorius</h4>
           <div class="rule rule-1 gray">
             <hr>
           </div>
-          <p class="paragraph direction-footer">Schaumannweg 20<br>30659 Hannover</p>
               <a class="link-text nav-link-footer" href="#"> Email: info@mp-kunsthandwerk.de</a>
           <div class="rule rule-1 gray">
             <hr>
