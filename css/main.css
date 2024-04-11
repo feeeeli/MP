@@ -1784,9 +1784,7 @@ button.form-button:hover {
   column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
-  grid-template-areas: 'content image';
-  grid-template-columns: 40% minmax(60%, 1px);
-  grid-template-rows: auto;
+  
   div {
     width: 150px;
     margin: 0 1.5rem 1.5rem 0;
