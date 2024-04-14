@@ -69,8 +69,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
     </script>
 
 
+    <script>
+      // JavaScript code to detect if the webpage is being viewed on a mobile device
+      function isMobileDevice() {
+          return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+      }
+
+      // Check if the current device is mobile
+      if (isMobileDevice()) {
+          document.write("<p>Mobil.</p>");
+      } else {
+          document.write("<p>Destop</p>");
+      }
+  </script>
+
+
 
   </main>
+
   <footer class="container footer-1 black-footer">
     <div class="container"><a href="index.html" class="responsive-picture picture-link-footer">
         <picture><img alt="Logo" src="./images/MP2.png"></picture>
