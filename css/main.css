@@ -674,6 +674,15 @@ body.body-index {
   background-blend-mode: normal;
 }
 
+.text-hinter-bild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7); /* Hintergrundfarbe mit Transparenz */
+  padding: 10px; /* Optional: Füge Abstand um den Text hinzu */
+  z-index: -1; /* Damit der Text hinter dem Bild liegt */
+}
+
 .container.navigation-links {
   display: -webkit-box;
   display: -webkit-flex;
