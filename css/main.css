@@ -1358,7 +1358,7 @@ button.form-button:hover {
     -ms-flex-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
-    background-color: #c3c7ccef;
+    background-color: #c3c7cc00;
 
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -1482,7 +1482,7 @@ button.form-button:hover {
 
   a.glyph.mobile-nav-button {
     display: block;
-    color: #fafaf3;
+    color: #0d0d01;
     text-align: right;
     font-size: 34px;
     line-height: 1;
