@@ -787,6 +787,52 @@ body.body-index {
           justify-content: center;
 }
 
+.container.mp-section-mich {
+  display: grid;
+  min-height: 100vh;
+  background-color: #c3c7ccef;;
+
+  grid-template-areas: 'content image';
+  grid-template-columns: 40% minmax(60%, 1px);
+  grid-template-rows: auto;
+}
+
+.container.mp-image-mich {
+  background-color: #c3c7ccef;
+  background-image: url('../images/Portrait_MP.jpg');
+  background-attachment: scroll;
+  background-position: center center;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  grid-area: image;
+  background-blend-mode: normal;
+}
+
+.container.content-mp-mich {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  padding: 48px 24px;
+  background-color: #c3c7ccef;
+
+  grid-area: content;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+}
+
 
 .container.black-footer.footer-1 {
   display: grid;
