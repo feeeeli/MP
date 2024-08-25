@@ -45,6 +45,7 @@ h2.black.section-title {
 }
 
 h2.hero-studio-heading {
+  display: block;
   margin-top: 0;
   margin-bottom: 16px;
   color: #000;
@@ -637,7 +638,8 @@ body.body-index {
 
 
 .container.navbar {
-  z-index: 1;
+  display: block;
+  z-index: 1000;
   position: relative;
   right: 0;
   left: 0;
@@ -1357,6 +1359,7 @@ button.form-button:hover {
   }
 
   .container.navbar {
+    display: block;
     position: absolute;
     z-index: 1000;
     -ms-flex-align: center;
@@ -1526,6 +1529,7 @@ button.form-button:hover {
   }
 
   h2.hero-studio-heading {
+    display: block;
     font-size: 4.52vw;
   }
 
@@ -1601,6 +1605,7 @@ button.form-button:hover {
   }
 
   h2.hero-studio-heading {
+    display: block;
     font-size: 20px;
   }
 
@@ -1684,6 +1689,7 @@ button.form-button:hover {
 
 .inline-gallery-container {
   z-index: 3;
+  clear: both;
   width: 100%;
   color: #fff;;
   height: 600px;
@@ -1697,3 +1703,4 @@ button.form-button:hover {
   margin: auto; /* Das Bild zentrieren */
   display: block; /* Das Bild als Blockelement darstellen */
 }
+
