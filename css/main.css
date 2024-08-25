@@ -637,6 +637,7 @@ body.body-index {
 
 
 .container.navbar {
+  z-index: 1;
   position: relative;
   right: 0;
   left: 0;
@@ -684,6 +685,7 @@ body.body-index {
 }
 
 .container.navigation-links {
+  z-index: 2;
   display: -webkit-box;
   display: -webkit-flex;
   display:    -moz-box;
@@ -1369,6 +1371,7 @@ button.form-button:hover {
   }
 
   .container.navigation-links {
+    z-index: 2;
     position: fixed;
     top: 0;
     right: 0;
@@ -1470,6 +1473,7 @@ button.form-button:hover {
 
   .container.navigation-links.show-menu {
     top: 0;
+    z-index: 2;
     visibility: visible;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -1679,6 +1683,7 @@ button.form-button:hover {
 }
 
 .inline-gallery-container {
+  z-index: 3;
   width: 100%;
   color: #fff;;
   height: 600px;
