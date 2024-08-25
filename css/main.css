@@ -834,6 +834,8 @@ body.body-index {
 }
 
 
+
+
 .container.black-footer.footer-1 {
   display: grid;
   background-color: #000;
@@ -1674,4 +1676,19 @@ button.form-button:hover {
   padding: 10px 15px;
   margin-left: 20px;
   cursor: pointer;
+}
+
+.inline-gallery-container {
+  width: 100%;
+  color: #fff;;
+  height: 600px;
+  position: relative;
+}
+
+.lg-item img {
+  max-width: 10%; /* Die Breite des Bildes auf 80% des Containers beschränken */
+  max-height: 10%; /* Die Höhe des Bildes auf 80% des Containers beschränken */
+  object-fit: contain; /* Das Bild proportional skalieren */
+  margin: auto; /* Das Bild zentrieren */
+  display: block; /* Das Bild als Blockelement darstellen */
 }
