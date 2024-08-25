@@ -103,8 +103,8 @@ const inlineGallery = lightGallery(lgContainer, {
         },
 
         {
-            src: 'images/Foto_8.jpg',
-            thumb: 'images/Foto_8.jpg',
+            src: 'images/Foto_88.jpg',
+            thumb: 'images/Foto_88.jpg',
             subHtml: `<div class="lightGallery-captions" style="color: black;" >          
                      <h4>Skulptur aus Walnussholz</h4>
                     </div>`,
@@ -151,8 +151,8 @@ const inlineGallery = lightGallery(lgContainer, {
         },
 
         {
-            src: 'images/Foto_14.jpg',
-            thumb: 'images/Foto_14.jpg',
+            src: 'images/Foto_140.jpg',
+            thumb: 'images/Foto_140.jpg',
             subHtml: `<div class="lightGallery-captions" style="color: black;" >          
                      <h4>Dose aus Walnussholz</h4>
                     </div>`,
