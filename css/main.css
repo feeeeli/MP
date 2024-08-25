@@ -430,7 +430,7 @@ body.body-index {
 
 .container.image-main-1 {
   background-color: #fff3eb;
-  background-image: url('../images/start.jpg');
+  background-image: url('../images/start3.jpg');
   background-attachment: scroll;
   background-position: right center;
   background-clip: border-box;
@@ -757,7 +757,7 @@ body.body-index {
 
 .container.mp-image-basis {
   background-color: #c3c7ccef;
-  background-image: url('../images/start.jpg');
+  background-image: url('../images/start3.jpg');
   background-attachment: scroll;
   background-position: center center;
   background-clip: border-box;
@@ -1688,12 +1688,12 @@ button.form-button:hover {
 }
 
 .lightGallery-captions{
-  color: black
+  color: black;
 }
 
 @media((max-width: 768px)) {
   .lightGallery-captions{
-  color: grey
+  color: black;
   }
 }
  
@@ -1714,4 +1714,30 @@ button.form-button:hover {
   margin: auto; /* Das Bild zentrieren */
   display: block; /* Das Bild als Blockelement darstellen */
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
 
+.tooltip-text {
+  visibility: hidden;
+  width: 160px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Positionierung über dem Text */
+  left: 50%;
+  margin-left: -80px; /* Negative Hälfte der Breite, um zu zentrieren */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
