@@ -1687,6 +1687,17 @@ button.form-button:hover {
   cursor: pointer;
 }
 
+.lightGallery-captions{
+  color: black
+}
+
+@media((max-width: 768px)) {
+  .lightGallery-captions{
+  color: black
+  }
+}
+ 
+
 .inline-gallery-container {
   z-index: 3;
   clear: both;

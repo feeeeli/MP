@@ -7,6 +7,7 @@
   <title>Index</title>
   <link rel="stylesheet" href="css/vanillacss.min.css">
   <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
   <script>document.createElement( "picture" );</script>
   <script class="picturefill" async="async" src="js/picturefill.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
@@ -35,96 +36,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 </script></div><a class="glyph mobile-nav-button" href="#!"><i class="kump-icons-menu7"></i></a>
   </nav>
-   
-    <h1> <div style="text-align:center"> Bildergallerie</div>
-    </h1>
-    <b><div style="text-align:center"></div> </b>
+
+  <h1> <div style="text-align:center"> Bildergallerie</div>
+  </h1>
+  <b><div style="text-align:center"></div> </b>
 <div class="grid-container">
-  <div>
-    <img class='grid-item grid-item-1' src='./images/Foto_1.JPG' alt=''>
-    <p>Vase aus Robinie</p>
+   
   </div>
-  <div>
-    <img class='grid-item grid-item-2' src='./images/Foto_2.JPG' alt=''>
-    <p>Multigadget</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-3' src='./images/Foto_3.JPG' alt=''>
-    <p>Flaschenverschlüsse</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-4' src='./images/Foto_4.JPG' alt=''>
-    <p>Eibenblume mit Herz</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_5.JPG' alt=''>
-    <p>Flaschenlicht aus Walnussholz</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_6.JPG' alt=''>
-    <p>Ostereidose aus Walnussholz</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_7.JPG' alt=''>
-    <p>Pflaume mit gelochiertem Deckel</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_8.JPG' alt=''>
-    <p>Skulptur aus Walnussholz</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_9.JPG' alt=''>
-    <p>Apfel-Lufterfrischer</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_10.JPG' alt=''>
-    <p>Apfel-Lufterfrischer</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_11.JPG' alt=''>
-    <p>Weihnachtsbäume aus gestocktem Apfel</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_12.JPG' alt=''>
-    <p>Schüssel und Vase aus Walnussholz</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_13.JPG' alt=''>
-    <p>Vase aus Apfelbaum</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_14.JPG' alt=''>
-    <p>Dose aus Walnussholz</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_15.JPG' alt=''>
-    <p>Multigadget</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_17.JPG' alt=''>
-    <p>Walnussschüssel Wiking Bowl</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_18.JPG' alt=''>
-    <p>Pflaumendose strukturiert</p>
-  </div>
+  <div id="inline-gallery-container" class="inline-gallery-container"></div>
+ <!-- Einbindung von lightGallery JavaScript -->
+ <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
 
-  <div>
+ <script src="js/lightgallery.js"></script>
 
-    
-    <img class='grid-item grid-item-5' src='./images/Foto_19.JPG' alt=''>
-    <p>Walnussschüssel strukturiert</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_20.JPG' alt=''>
-    <p>Kuksa Tasse Walnuss</p>
-  </div>
-  <div>
-    <img class='grid-item grid-item-5' src='./images/Foto_21.JPG' alt=''>
-    <p>Dübelspiel aus Apfelbaum</p>
-  </div>
 
-</div>
+
 <footer class="container footer-1 black-footer">
   <div class="container"><a href="index.html" class="responsive-picture picture-link-footer">
       <picture><img alt="Logo" src="./images/MP2.png"></picture>

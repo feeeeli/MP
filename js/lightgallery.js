@@ -19,6 +19,35 @@ const inlineGallery = lightGallery(lgContainer, {
     slideDelay: 100,
     plugins: [lgZoom, lgThumbnail,lgAutoplay],
     dynamicEl: [
+ 
+        {
+            src: 'images/Foto_98.jpg',
+            thumb: 'images/Foto_98.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4>Kerzenständer aus Kirschholz</h4>
+                    </div>`,
+        },
+        {
+            src: 'images/Foto_97.jpg',
+            thumb: 'images/Foto_97.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4>Schüssel aus Wallnussholz</h4>
+                    </div>`,
+        },
+        {
+            src: 'images/Foto_99.jpg',
+            thumb: 'images/Foto_99.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4>Vase aus Robinie</h4>
+                    </div>`,
+        },
+        {
+            src: 'images/Foto_96.jpg',
+            thumb: 'images/Foto_96.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4>Kronkorkenuhr</h4>
+                    </div>`,
+        },
         {
             src: 'images/Foto_1.jpg',
             thumb: 'images/Foto_1.jpg',
