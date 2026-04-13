@@ -19,7 +19,81 @@ const inlineGallery = lightGallery(lgContainer, {
     slideDelay: 100,
     plugins: [lgZoom, lgThumbnail,lgAutoplay],
     dynamicEl: [
- 
+
+                       {
+            src: 'images/holzkunst.jpg',
+            thumb: 'images/holzkunst.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4 class="tooltip">Holzkunst-Ring</h4>
+                     <span class="tooltip-text">Holzkunst-Ring</span>
+                    </div> `,
+        },
+               {
+            src: 'images/eierbecher.jpg',
+            thumb: 'images/eierbecher.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4 class="tooltip">Eierbecher</h4>
+                     <span class="tooltip-text">Eierbecher</span>
+                    </div> `,
+        },
+         {
+            src: 'images/lebensbaum.jpg',
+            thumb: 'images/lebensbaum.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4 class="tooltip">Lebensbaum</h4>
+                     <span class="tooltip-text">Lebensbaum</span>
+                    </div> `,
+        },
+            {
+            src: 'images/rohrkreuz.jpg',
+            thumb: 'images/rohrkreuz.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4 class="tooltip">Holz-Esche Rohrkeuz</h4>
+                     <span class="tooltip-text">Holz-Esche Rohrkeuz</span>
+                    </div> `,
+        },
+        {
+            src: 'images/Foto4_Flaschenverschluss.jpg',
+            thumb: 'images/Foto4_Flaschenverschluss.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4 class="tooltip">Flaschenverschlüsse</h4>
+                     <span class="tooltip-text">Flaschenverschlüsse</span>
+                    </div> `,
+        },
+
+        {
+            src: 'images/Foto5_Flaschenöffner.jpg',
+            thumb: 'images/Foto5_Flaschenöffner.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4 class="tooltip">Flaschenöffner</h4>
+                     <span class="tooltip-text">Flaschenöffner</span>
+                    </div> `,
+        },
+        {
+            src: 'images/Foto3_Flaschenlichter.jpg',
+            thumb: 'images/Foto3_Flaschenlichter.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4 class="tooltip">Flaschenlichter</h4>
+                     <span class="tooltip-text">Flaschenlichter</span>
+                    </div> `,
+        },
+        {
+            src: 'images/Foto2_Flaschenwald.jpg',
+            thumb: 'images/Foto2_Flaschenwald.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4 class="tooltip">Flaschenwald</h4>
+                     <span class="tooltip-text">Flaschenwald</span>
+                    </div> `,
+        },
+
+         {
+            src: 'images/Foto1_Schneemänner.jpg',
+            thumb: 'images/Foto1_Schneemänner.jpg',
+            subHtml: `<div class="lightGallery-captions" >          
+                     <h4 class="tooltip">Schneemänner</h4>
+                     <span class="tooltip-text">Schneemänner</span>
+                    </div> `,
+        },
         {
             src: 'images/Foto_98.jpg',
             thumb: 'images/Foto_98.jpg',
