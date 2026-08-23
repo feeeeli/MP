@@ -29,8 +29,8 @@ const inlineGallery = lightGallery(lgContainer, {
                     </div> `,
         },
                {
-            src: 'images/eierbecher.jpg',
-            thumb: 'images/eierbecher.jpg',
+            src: 'images/Eierbecher.jpg',
+            thumb: 'images/Eierbecher.jpg',
             subHtml: `<div class="lightGallery-captions" >          
                      <h4 class="tooltip">Eierbecher</h4>
                      <span class="tooltip-text">Eierbecher</span>
@@ -279,9 +279,9 @@ const inlineGallery = lightGallery(lgContainer, {
     thumbWidth: 80,
     thumbHeight: "80px",
     thumbMargin: 4,
-    autoplay: true,  // Autoplay aktivieren
+    autoplay: false,
     autoplayFirstVideo: true,
-    pause: 1000,     // Pause zwischen den Slides in Millisekunden
+    pause: 1000,
     progressBar: true // Fortschrittsbalken anzeigen
 });
 
