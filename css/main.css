@@ -2094,6 +2094,27 @@ button.form-button:hover {
     margin-right: 4px;
   }
 
+  a.glyph.mobile-nav-button:not(.close-button-cross) {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    z-index: 1001;
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    border: 2px solid #0e0500fd;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, .85);
+    color: #0e0500fd;
+    text-align: center;
+    line-height: 1;
+  }
+
+  a.glyph.mobile-nav-button:not(.close-button-cross):hover,
+  a.glyph.mobile-nav-button:not(.close-button-cross):focus-visible {
+    background-color: #fff;
+  }
+
   a.link-text.nav-link-footer {
     display: block;
     margin-bottom: 10px;
