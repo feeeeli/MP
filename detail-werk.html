@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="Detailansicht eines handgefertigten Holzkunstwerks von MP Kunsthandwerk.">
+	<title>Werkdetail | MP Kunsthandwerk</title>
+	<link rel="stylesheet" href="css/vanillacss.min.css">
+	<link rel="stylesheet" href="css/wireframe-theme.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Biryani:300,400,900,b%7CManrope">
+</head>
+<body class="body-index">
+	<nav class="container navbar" aria-label="Hauptnavigation">
+		<a href="index.html" class="responsive-picture picture-link-1"><picture><img alt="MP Kunsthandwerk" src="./images/MP.png"></picture></a>
+		<div class="container navigation-links">
+			<a class="glyph mobile-nav-button close-button-cross" href="#"><i class="kump-icons-cross2"></i></a>
+			<a href="index.html" class="responsive-picture logo-mobile-menu"><picture><img alt="MP Kunsthandwerk" src="./images/MP.png"></picture></a>
+			<a class="link-text navlink" href="index.html">Start</a>
+			<a class="link-text navlink" href="ueber_mich.html">Über mich</a>
+			<a class="link-text navlink" href="gallerie.html">Bildergalerie</a>
+			<a class="link-text navlink" href="kontakt.html">Kontakt</a>
+			<a class="link-text navlink" href="impressum.html">Impressum</a>
+		</div>
+		<div class="html-element navigation-code"><script>
+document.addEventListener("DOMContentLoaded", function() {
+	$('.mobile-nav-button').click(function(e) {
+		e.preventDefault();
+		$('.navigation-links').toggleClass('show-menu');
+		$('body').css('overflow', $('.navigation-links').hasClass('show-menu') ? 'hidden' : 'auto');
+	});
+});
+</script></div>
+		<a class="glyph mobile-nav-button" href="#!"><i class="kump-icons-menu7"></i></a>
+	</nav>
+
+	<section class="event-banner" aria-label="Bevorstehende Veranstaltungen">
+		<div class="event-banner-inner">
+			<div class="event-list">
+				<span class="event-banner-label">Bevorstehende Veranstaltungen:</span>
+				<a class="event-item" href="https://www.hwk-hannover.de/termine/ausstellung-trauer-und-trost-23,0,evedetail.html?eve=1566" target="_blank" rel="noopener noreferrer"><span>05.09.2026 - 02.10.2026</span> Handwerksform Hannover: Trauer und Trost</a>
+				<a class="event-item" href="https://www.kulturtreffbothfeld.de/rueckblick-bothfelder-kunstspaziergang-am-14-15-september-2024" target="_blank" rel="noopener noreferrer"><span>14.09.2026 - 15.09.2026</span> Bothfelder Kunstspaziergang</a>
+				<a class="event-item" href="https://dft2026.de/" target="_blank" rel="noopener noreferrer"><span>18.09.2026 - 20.09.2026</span> Drechsler-Forum-Treffen in Ebbs</a>
+				<span class="event-item"><span>14.11.2026 - 13.12.2026</span> Handwerksform Hannover: Weihnachtsausstellung</span>
+			</div>
+		</div>
+	</section>
+	<main class="detail-page">
+		<h1 class="detail-title" data-work-name>Werkdetail</h1>
+		<nav class="detail-navigation" aria-label="Werknavigation">
+			<a class="detail-navigation-link" data-work-previous href="detail-werk.html">&larr; Vorheriges Werk</a>
+			<a class="detail-navigation-link" data-work-next href="detail-werk.html">Nächstes Werk &rarr;</a>
+		</nav>
+		<div class="detail-layout">
+			<div class="detail-image-wrapper"><img class="detail-image" data-work-image src="images/holzkunst.jpg" alt="Holzkunstwerk"></div>
+			<div class="detail-information">
+				<h2>Werkdetails</h2>
+				<table class="detail-table"><tbody>
+					<tr><th scope="row">Bezeichnung</th><td data-work-name>Werkdetail</td></tr>
+					<tr><th scope="row">Preis</th><td data-work-price>Auf Anfrage</td></tr>
+					<tr><th scope="row">Material</th><td data-work-material>Bitte ergänzen</td></tr>
+				</tbody></table>
+				<a class="detail-contact-link" data-work-mail href="mailto:info@mp-kunsthandwerk.de?subject=Anfrage">Anfrage per Mail schreiben</a>
+			</div>
+		</div>
+		<section class="detail-gallery" aria-labelledby="detail-gallery-title">
+			<h2 id="detail-gallery-title">Weitere Werke</h2>
+			<div class="detail-thumbnails" data-work-thumbnails></div>
+		</section>
+	</main>
+	<footer class="container footer-1 black-footer">
+		<div class="container">
+			<a href="index.html" class="responsive-picture picture-link-footer">
+				<picture><img alt="MP Kunsthandwerk" src="./images/MP2.png" loading="lazy" decoding="async"></picture>
+			</a>
+			<div class="container fotter-3-columns">
+				<div class="container description-logos-footer">
+					<h4 class="headline-footer">MP Kunsthandwerk by Martin Pistorius</h4>
+					<div class="rule rule-1 gray"><hr></div>
+					<a class="link-text nav-link-footer" href="mailto:info@mp-kunsthandwerk.de?subject=Anfrage&body=Hallo Martin,">Email:<br>info@mp-kunsthandwerk.de</a>
+					<div class="rule rule-1 gray"><hr></div>
+					<h4 class="headline-footer">Folge mir auf Instagram</h4>
+					<div class="container social-footer-wrapper">
+						<a href="https://www.instagram.com/pistoriusmartin?utm_source=qr&igsh=NWZ0b3oycmJtNmtj" target="_blank" rel="noopener noreferrer" aria-label="MP Kunsthandwerk auf Instagram" class="social-image social-icon"><img class="instagram-icon" src="./socialicons/webicon-instagram.png" alt="Instagram"></a>
+					</div>
+				</div>
+				<div class="container container-links-footer-wrapper">
+					<a class="link-text nav-link-footer" href="index.html">Start</a>
+					<a class="link-text nav-link-footer" href="ueber_mich.html">Über mich</a>
+					<a class="link-text nav-link-footer" href="gallerie.html">Bildergalerie</a>
+					<a class="link-text nav-link-footer" href="kontakt.html">Kontakt</a>
+					<a class="link-text nav-link-footer" href="impressum.html">Impressum</a>
+				</div>
+				<div class="container container-form-content-wrapper">
+					<form class="form-container form-footer-container"></form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/detail-werk.js"></script>
+</body>
+</html>
