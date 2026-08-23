@@ -2003,7 +2003,7 @@ button.form-button:hover {
 
   .container.navbar {
     width: 100%;
-    padding: 16px;
+    padding: 16px 24px;
   }
 
   a.responsive-picture.picture-link-1 {
@@ -2034,8 +2034,13 @@ button.form-button:hover {
   }
 
   h1.mp-home-heading {
-    font-size: 42px;
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-size: 34px;
     line-height: 1;
+    overflow-wrap: break-word;
   }
 
   h2.mp-subheading {
@@ -2053,6 +2058,17 @@ button.form-button:hover {
     display: block;
   }
 
+  .container.footer-1 {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    box-sizing: border-box;
+  }
+
+  .container.footer-1 > .container {
+    width: 100%;
+  }
+
   .container.description-logos-footer,
   .container.container-links-footer-wrapper,
   .container.container-form-content-wrapper {
@@ -2063,6 +2079,15 @@ button.form-button:hover {
 
   .container.description-logos-footer {
     margin-top: 0;
+  }
+
+  .container.navigation-links {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  a.glyph.mobile-nav-button {
+    margin-right: 4px;
   }
 
   a.link-text.nav-link-footer {
