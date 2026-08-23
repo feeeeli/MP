@@ -1824,6 +1824,10 @@ button.form-button:hover {
 }
 
 @media screen and (max-width: 48rem) {
+  .event-banner {
+    display: none;
+  }
+
   .event-banner-inner {
     display: block;
   }
