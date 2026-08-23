@@ -17,6 +17,7 @@ const inlineGallery = lightGallery(lgContainer, {
     // before navigating to different slides (Optional)
     // You can find caption animation demo on the captions demo page
     slideDelay: 100,
+    swipeThreshold: 50,
     plugins: [lgZoom, lgThumbnail,lgAutoplay],
     dynamicEl: [
 
