@@ -44,7 +44,7 @@ h2.black.section-title {
   color: #000;
 }
 
-h2.hero-studio-heading {
+h1.hero-studio-heading {
   display: block;
   margin-top: 0;
   margin-bottom: 16px;
@@ -57,6 +57,79 @@ h2.hero-studio-heading {
 
 h2.blue.section-title {
   color: #19a5a2;
+}
+
+.event-banner {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  padding: 18px 24px;
+  background-color: #0e0500fd;
+  color: #fff;
+  font-family: 'Biryani', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.event-banner-inner {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+  overflow: hidden;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.event-banner-label {
+  flex: 0 0 auto;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+.event-list {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 8px 24px;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: event-marquee 32s linear infinite;
+}
+
+.event-list:hover,
+.event-list:focus-within {
+  animation-play-state: paused;
+}
+
+@keyframes event-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.event-item {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a.event-item {
+  text-decoration: none;
+}
+
+a.event-item:hover,
+a.event-item:focus-visible {
+  color: #fff;
+}
+
+.event-item span {
+  margin-right: 6px;
+  color: #fff;
+  white-space: nowrap;
+  font-weight: 700;
 }
 
 h2.section-title.yellow {
@@ -1528,7 +1601,7 @@ button.form-button:hover {
     font-size: 4.52vw;
   }
 
-  h2.hero-studio-heading {
+  h1.hero-studio-heading {
     display: block;
     font-size: 4.52vw;
   }
@@ -1604,7 +1677,7 @@ button.form-button:hover {
     margin-bottom: 0;
   }
 
-  h2.hero-studio-heading {
+  h1.hero-studio-heading {
     display: block;
     font-size: 20px;
   }
@@ -1702,17 +1775,25 @@ button.form-button:hover {
   z-index: 3;
   clear: both;
   width: 100%;
-  color: #fff;;
-  height: 600px;
+  min-height: 600px;
   position: relative;
 }
 
+.gallery-title {
+  margin: 48px 24px 24px;
+  color: #0e0500fd;
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  font-family: 'Biryani', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .lg-item img {
-  max-width: 10%; /* Die Breite des Bildes auf 80% des Containers beschränken */
-  max-height: 10%; /* Die Höhe des Bildes auf 80% des Containers beschränken */
-  object-fit: contain; /* Das Bild proportional skalieren */
-  margin: auto; /* Das Bild zentrieren */
-  display: block; /* Das Bild als Blockelement darstellen */
+  max-width: min(90vw, 1200px);
+  max-height: 78vh;
+  object-fit: contain;
+  margin: auto;
+  display: block;
 }
 .tooltip {
   position: relative;
@@ -1740,4 +1821,35 @@ button.form-button:hover {
 .tooltip:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+}
+
+@media screen and (max-width: 48rem) {
+  .event-banner-inner {
+    display: block;
+  }
+
+  .event-banner-label {
+    margin-bottom: 8px;
+  }
+
+  .event-list {
+    display: flex;
+  }
+
+  .event-item {
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+
+  .gallery-title {
+    margin-top: 32px;
+    font-size: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .event-list {
+    animation: none;
+    overflow-x: auto;
+  }
 }
