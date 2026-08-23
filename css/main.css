@@ -1788,6 +1788,13 @@ button.form-button:hover {
   font-family: 'Biryani', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.gallery-intro {
+  margin: 0 24px 24px;
+  color: #0e0500fd;
+  text-align: center;
+  font-family: 'Biryani', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .lg-item img {
   max-width: min(90vw, 1200px);
   max-height: 78vh;
@@ -2089,6 +2096,12 @@ button.form-button:hover {
     margin: 24px 16px 16px;
     font-size: 32px;
     line-height: 1.2;
+  }
+
+  .gallery-intro {
+    margin: 0 16px 16px;
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .inline-gallery-container {

@@ -77,3 +77,28 @@ if (detailMail) detailMail.href = `mailto:info@mp-kunsthandwerk.de?subject=${enc
 if (detailPrevious) detailPrevious.href = `detail-werk.html?werk=${encodeURIComponent(previousWork[0])}`;
 if (detailNext) detailNext.href = `detail-werk.html?werk=${encodeURIComponent(nextWork[0])}`;
 document.title = `${currentWork[1]} | MP Kunsthandwerk`;
+
+const imageWrapper = document.querySelector('.detail-image-wrapper');
+let touchStartX = 0;
+let touchStartY = 0;
+
+if (imageWrapper) {
+  imageWrapper.addEventListener('touchstart', (event) => {
+    const touch = event.changedTouches[0];
+    touchStartX = touch.clientX;
+    touchStartY = touch.clientY;
+  }, { passive: true });
+
+  imageWrapper.addEventListener('touchend', (event) => {
+    const touch = event.changedTouches[0];
+    const horizontalDistance = touch.clientX - touchStartX;
+    const verticalDistance = touch.clientY - touchStartY;
+
+    if (Math.abs(horizontalDistance) < 50 || Math.abs(horizontalDistance) <= Math.abs(verticalDistance)) {
+      return;
+    }
+
+    const targetKey = horizontalDistance < 0 ? nextWork[0] : previousWork[0];
+    window.location.href = `detail-werk.html?werk=${encodeURIComponent(targetKey)}`;
+  }, { passive: true });
+}
