@@ -287,3 +287,22 @@ const inlineGallery = lightGallery(lgContainer, {
 
 // Since we are using dynamic mode, we need to programmatically open lightGallery
 inlineGallery.openGallery();
+
+const detailKeys = [
+    'holzkunst-ring', 'eierbecher', 'lebensbaum', 'rohrkreuz',
+    'flaschenverschluesse', 'flaschenoeffner', 'flaschenlichter',
+    'flaschenwald', 'schneemaenner', 'kerzenstaender', 'schuessel-wallnuss',
+    'vase-linde', 'kronkorkenuhr', 'vase-robinie', 'multigadget',
+    'flaschenverschluesse-2', 'eibenblume-herz', 'flaschenlicht-walnuss',
+    'ostereidose', 'pflaume-deckel', 'skulptur-walnuss',
+    'apfel-lufterfrischer', 'apfel-lufterfrischer-2', 'vase-robinie-2',
+    'schuessel-vase-walnuss', 'vase-apfelbaum', 'dose-walnuss',
+    'wiking-bowl', 'pflaumendose', 'walnussschüssel', 'kuksa-tasse', 'dübelspiel'
+];
+
+lgContainer.addEventListener('click', function(event) {
+    const image = event.target.closest('.lg-current .lg-img-wrap img');
+    if (image && detailKeys[inlineGallery.index]) {
+        window.location.href = `detail-werk.html?werk=${encodeURIComponent(detailKeys[inlineGallery.index])}`;
+    }
+});
