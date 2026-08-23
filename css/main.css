@@ -2082,8 +2082,12 @@ button.form-button:hover {
   }
 
   .container.navigation-links {
+    right: 0;
+    left: 0;
+    width: auto;
     padding-right: 24px;
     padding-left: 24px;
+    box-sizing: border-box;
   }
 
   a.glyph.mobile-nav-button {
@@ -2235,4 +2239,9 @@ button.form-button:hover {
     animation: none;
     overflow-x: auto;
   }
+}
+
+.brand-word {
+  display: inline-block;
+  white-space: nowrap;
 }
