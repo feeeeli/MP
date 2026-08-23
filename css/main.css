@@ -2195,6 +2195,14 @@ button.form-button:hover {
     flex-basis: 82px;
     height: 82px;
   }
+
+  body > main:not(.mp-container-1) {
+    padding-top: 96px;
+  }
+
+  main.detail-page {
+    padding-top: 96px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
