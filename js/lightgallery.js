@@ -63,8 +63,8 @@ const inlineGallery = lightGallery(lgContainer, {
         },
 
         {
-            src: 'images/Foto5_Flaschenöffner.jpg',
-            thumb: 'images/Foto5_Flaschenöffner.jpg',
+            src: 'images/Foto5_Flaschenoeffner.jpg',
+            thumb: 'images/Foto5_Flaschenoeffner.jpg',
             subHtml: `<div class="lightGallery-captions" >          
                      <h4 class="tooltip">Flaschenöffner</h4>
                      <span class="tooltip-text">Flaschenöffner</span>
@@ -88,8 +88,8 @@ const inlineGallery = lightGallery(lgContainer, {
         },
 
          {
-            src: 'images/Foto1_Schneemänner.jpg',
-            thumb: 'images/Foto1_Schneemänner.jpg',
+            src: 'images/Foto1_Schneemaenner.jpg',
+            thumb: 'images/Foto1_Schneemaenner.jpg',
             subHtml: `<div class="lightGallery-captions" >          
                      <h4 class="tooltip">Schneemänner</h4>
                      <span class="tooltip-text">Schneemänner</span>
