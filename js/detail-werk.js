@@ -1,13 +1,13 @@
 const works = [
   ['holzkunst-ring', 'Holzkunst-Ring', 'images/holzkunst.jpg', 'Holzkunst-Ring auf Stahlplatte gebürstet', 'Auf Anfrage', 'Eberesche gestockt'],
-  ['eierbecher', 'Eierbecher', 'images/Eierbecher.jpg', 'Eierbecher aus Eiche', '10 Euro je Stück', 'Eiche'],
+  ['eierbecher', 'Eierbecher/Serviettenringe', 'images/Eierbecher.jpg', 'Eierbecher/Serviettenringe aus Eiche', '8 Euro je Stück', 'Eiche'],
   ['lebensbaum', 'Lebensbaum', 'images/lebensbaum.jpg', 'Lebensbaum', '230 Euro', 'Flieder, Buche'],
   ['rohrkreuz', 'Holz-Esche Rohrkreuz', 'images/rohrkreuz.jpg', 'Rohrkreuz', 'Auf Anfrage', 'Esche'],
   ['flaschenverschluesse', 'Flaschenverschlüsse', 'images/Foto4_Flaschenverschluss.jpg', 'Flaschenverschlüsse', '10 Euro je Stück', 'diverse Hölzer'],
-  ['flaschenoeffner', 'Flaschenöffner', 'images/Foto5_Flaschenöffner.jpg', 'Flaschenöffner', 'Auf Anfrage', 'diverse Hölzer'],
+  ['flaschenoeffner', 'Push up Flaschenöffner', 'images/Foto5_Flaschenoeffner.jpg', 'Push up Flaschenöffner', '30 Euro', 'diverse Hölzer'],
   ['flaschenlichter', 'Flaschenlichter', 'images/Foto3_Flaschenlichter.jpg', 'Flaschenlichter', '30 Euro je Stück', 'diverse Hölzer'],
   ['flaschenwald', 'Flaschenwald', 'images/Foto2_Flaschenwald.jpg', 'Flaschenwald', '45 Euro', 'diverse Hölzer'],
-  ['schneemaenner', 'Schneemänner', 'images/Foto1_Schneemänner.jpg', 'Schneemänner aus Kirschholz', '20 Euro je Stück', 'diverse Hölzer'],
+  ['schneemaenner', 'Schneemänner', 'images/Foto1_Schneemaenner.jpg', 'Schneemänner aus Kirschholz', '20 Euro je Stück', 'diverse Hölzer'],
   ['kerzenstaender', 'Kerzenständer aus Kirschholz', 'images/Foto_98.jpg', 'Kerzenständer', '30 Euro je Stück', 'Kirschholz'],
   ['schuessel-wallnuss', 'Schüssel aus Walnussholz', 'images/Foto_97.jpg', 'Schüssel aus Walnussholz', 'Auf Anfrage', 'Walnussholz'],
   ['vase-linde', 'Vase aus Linde', 'images/Foto_99.jpg', 'Vase aus Linde', '85 Euro', 'Linde'],
@@ -22,7 +22,7 @@ const works = [
   ['skulptur-walnuss', 'Skulptur aus Walnussholz', 'images/Foto_88.JPG', 'Skulptur aus Walnussholz', 'Auf Anfrage', 'Walnussholz'],
   ['apfel-lufterfrischer', 'Apfel-Lufterfrischer', 'images/Foto_9.jpg', 'Apfel-Lufterfrischer', '15 Euro je Stück', 'diverse Hölzer'],
   ['apfel-lufterfrischer-2', 'Apfel-Lufterfrischer', 'images/Foto_10.jpg', 'Apfel-Lufterfrischer', '15 Euro je Stück', 'diverse Hölzer'],
-  ['vase-robinie-2', 'Vase aus Robinie', 'images/Foto_11.jpg', 'Vase aus Robinie]', '65 Euro', 'Robinie'],
+  ['tannenbaeume', 'Tannenbäume', 'images/Foto_11.jpg', 'Tannenbäume]', '12 Euro', 'diverse Hölzer'],
   ['wiking-bowl', 'Walnussschüssel Wiking Bowl', 'images/Foto_17.jpg', 'Walnussschüssel Wiking Bowl', '120 Euro', 'Walnussholz'],
   ['pflaumendose', 'Pflaumendose strukturiert', 'images/Foto_18.jpg', 'Pflaumendose strukturiert', '30 Euro', 'Pflaumenholz'],
   ['walnussschüssel', 'Walnussschüssel strukturiert', 'images/Foto_19.jpg', 'Walnussschüssel strukturiert', 'Auf Anfrage', 'Walnussholz'],
@@ -30,9 +30,15 @@ const works = [
   ['dübelspiel', 'Dübelspiel aus Apfelbaum', 'images/Foto_21.jpg', 'Dübelspiel aus Apfelbaum', '25 Euro', 'Apfelbaum']
 ];
 
+const requestedKey = document.querySelector('[data-work-key]')?.dataset.workKey || new URLSearchParams(window.location.search).get('werk') || 'holzkunst-ring';
+const currentWork = works.find(([key]) => key === requestedKey) || works[0];
+const currentKey = currentWork[0];
+const currentIndex = works.indexOf(currentWork);
+const previousWork = works[(currentIndex - 1 + works.length) % works.length];
+const nextWork = works[(currentIndex + 1) % works.length];
+
 const thumbnailList = document.querySelector('[data-work-thumbnails]');
 if (thumbnailList) {
-  const currentKey = document.querySelector('[data-work-key]')?.dataset.workKey || 'holzkunst-ring';
   works.forEach(([key, name, imagePath]) => {
     const link = document.createElement('a');
     link.className = 'detail-thumbnail';
@@ -58,11 +64,6 @@ const detailMaterial = document.querySelector('[data-work-material]');
 const detailMail = document.querySelector('[data-work-mail]');
 const detailPrevious = document.querySelector('[data-work-previous]');
 const detailNext = document.querySelector('[data-work-next]');
-const currentKey = document.querySelector('[data-work-key]')?.dataset.workKey || new URLSearchParams(window.location.search).get('werk') || 'holzkunst-ring';
-const currentWork = works.find(([key]) => key === currentKey) || works[0];
-const currentIndex = works.indexOf(currentWork);
-const previousWork = works[(currentIndex - 1 + works.length) % works.length];
-const nextWork = works[(currentIndex + 1) % works.length];
 
 detailNames.forEach((element, index) => {
   element.textContent = index === 0 ? currentWork[1] : (currentWork[3] || currentWork[1]);
