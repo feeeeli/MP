@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Dübelspiel von MP Kunsthandwerk: Ein spannendes Holzspiel für mehrere Spieler.">
+  <title>Dübelspiel | MP Kunsthandwerk</title>
+  <link rel="stylesheet" href="css/vanillacss.min.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <script>document.createElement("picture");</script>
+  <script class="picturefill" async="async" src="js/picturefill.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Biryani:300,400,900,b%7CManrope">
+</head>
+
+<body class="body-index">
+  <nav class="container navbar" aria-label="Hauptnavigation">
+    <a href="index.html" class="responsive-picture picture-link-1">
+      <picture><img alt="MP Kunsthandwerk" src="./images/MP.png"></picture>
+    </a>
+    <div class="container navigation-links">
+      <a class="glyph mobile-nav-button close-button-cross" href="#"><i class="kump-icons-cross2"></i></a>
+      <a href="index.html" class="responsive-picture logo-mobile-menu">
+        <picture><img alt="MP Kunsthandwerk" src="./images/MP.png"></picture>
+      </a>
+      <a class="link-text navlink" href="index.html">Start</a>
+      <a class="link-text navlink" href="ueber_mich.html">Über mich</a>
+      <a class="link-text navlink" href="gallerie.html">Bildergalerie</a>
+      <a class="link-text navlink" href="duebelspiel.html" aria-current="page">Dübelspiel</a>
+      <a class="link-text navlink" href="kontakt.html">Kontakt</a>
+      <a class="link-text navlink" href="impressum.html">Impressum</a>
+    </div>
+    <div class="html-element navigation-code"><script>
+document.addEventListener("DOMContentLoaded", function() {
+  $('.mobile-nav-button').click(function(e) {
+    e.preventDefault();
+    $('.navigation-links').toggleClass('show-menu');
+    $('body').css('overflow', $('.navigation-links').hasClass('show-menu') ? 'hidden' : 'auto');
+  });
+});
+</script></div>
+    <a class="glyph mobile-nav-button" href="#!"><i class="kump-icons-menu7"></i></a>
+  </nav>
+
+  <section class="event-banner" aria-label="Bevorstehende Veranstaltungen">
+    <div class="event-banner-inner">
+      <div class="event-list">
+        <span class="event-banner-label">Bevorstehende Veranstaltungen:</span>
+        <a class="event-item" href="https://www.hwk-hannover.de/termine/ausstellung-trauer-und-trost-23,0,evedetail.html?eve=1566" target="_blank" rel="noopener noreferrer"><span>05.09.2026 - 02.10.2026</span> Handwerksform Hannover: Trauer und Trost</a>
+        <a class="event-item" href="https://www.kulturtreffbothfeld.de/rueckblick-bothfelder-kunstspaziergang-am-14-15-september-2024" target="_blank" rel="noopener noreferrer"><span>14.09.2026 - 15.09.2026</span> Bothfelder Kunstspaziergang</a>
+        <a class="event-item" href="https://dft2026.de/" target="_blank" rel="noopener noreferrer"><span>18.09.2026 - 20.09.2026</span> Drechsler-Forum-Treffen in Ebbs</a>
+        <span class="event-item"><span>14.11.2026 - 13.12.2026</span> Handwerksform Hannover: Weihnachtsausstellung</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="container duebelspiel-section">
+    <article class="container duebelspiel-content">
+      <div class="container container-content-wrapper">
+        <h1 class="hero-studio-heading">Dübelspiel</h1>
+        <section aria-labelledby="spielziel-title">
+          <h2 id="spielziel-title" class="duebelspiel-heading">Ziel des Spiels</h2>
+          <p class="duebelspiel-copy">Wer zuerst <strong>keine Dübel mehr</strong> hat, gewinnt.</p>
+          <p class="duebelspiel-copy">
+            Weitere Informationen zum Preis des Dübelspiels (25 Euro) findest du auf der
+            <a href="detail-werk.html?werk=d%C3%BCbelspiel">Detailseite zum Dübelspiel</a>.
+          </p>
+        </section>
+        <section aria-labelledby="spielablauf-title">
+          <h2 id="spielablauf-title" class="duebelspiel-heading">Spielablauf</h2>
+          <ol class="duebelspiel-rules">
+            <li>Jeder Spieler erhält gleich viele Dübel.</li>
+            <li>Der Spieler am Zug darf so oft würfeln, wie er möchte.</li>
+            <li>Der gewürfelte Dübel wird in das Loch mit der gewürfelten Zahl gesteckt.</li>
+            <li>Bei einer <strong>1 bis 5</strong> bleibt der Dübel im entsprechenden Loch stehen.</li>
+            <li>Bei einer <strong>6</strong> versinkt der Dübel im Loch.</li>
+            <li>Ist das gewürfelte Loch bereits mit einem Dübel besetzt, muss der Spieler diesen Dübel nehmen. Danach ist sofort der nächste Spieler an der Reihe.</li>
+            <li>Solange das gewürfelte Loch frei ist, darf der Spieler weiterwürfeln.</li>
+          </ol>
+        </section>
+        <section class="duebelspiel-winner" aria-labelledby="gewinner-title">
+          <h2 id="gewinner-title" class="duebelspiel-heading">Gewinner</h2>
+          <p class="duebelspiel-copy">Wer als Erster <strong>alle seine Dübel losgeworden ist</strong>, gewinnt das Spiel!</p>
+        </section>
+      </div>
+    </article>
+    <figure class="container duebelspiel-image">
+      <a href="detail-werk.html?werk=d%C3%BCbelspiel" aria-label="Zur Detailseite des Dübelspiels mit Preis">
+        <img src="./images/Foto_21.jpg" alt="Dübelspiel aus Holz mit nummerierten Löchern und Spielbrett">
+      </a>
+    </figure>
+  </main>
+
+  <footer class="container footer-1 black-footer">
+    <div class="container">
+      <a href="index.html" class="responsive-picture picture-link-footer">
+        <picture><img alt="MP Kunsthandwerk" src="./images/MP2.png" loading="lazy" decoding="async"></picture>
+      </a>
+      <div class="container fotter-3-columns">
+        <div class="container description-logos-footer">
+          <h4 class="headline-footer">MP Kunsthandwerk by Martin Pistorius</h4>
+          <div class="rule rule-1 gray"><hr></div>
+          <a class="link-text nav-link-footer" href="mailto:info@mp-kunsthandwerk.de?subject=Anfrage&body=Hallo Martin,">Email:<br>info@mp-kunsthandwerk.de</a>
+          <div class="rule rule-1 gray"><hr></div>
+          <h4 class="headline-footer">Folge mir auf Instagram</h4>
+          <div class="container social-footer-wrapper">
+            <a href="https://www.instagram.com/pistoriusmartin?utm_source=qr&igsh=NWZ0b3oycmJtNmtj" target="_blank" rel="noopener noreferrer" aria-label="MP Kunsthandwerk auf Instagram" class="social-image social-icon"><img class="instagram-icon" src="./socialicons/webicon-instagram.png" alt="Instagram"></a>
+          </div>
+        </div>
+        <div class="container container-links-footer-wrapper">
+          <a class="link-text nav-link-footer" href="index.html">Start</a>
+          <a class="link-text nav-link-footer" href="ueber_mich.html">Über mich</a>
+          <a class="link-text nav-link-footer" href="gallerie.html">Bildergalerie</a>
+          <a class="link-text nav-link-footer" href="duebelspiel.html">Dübelspiel</a>
+          <a class="link-text nav-link-footer" href="kontakt.html">Kontakt</a>
+          <a class="link-text nav-link-footer" href="impressum.html">Impressum</a>
+        </div>
+        <div class="container container-form-content-wrapper">
+          <form class="form-container form-footer-container"></form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/outofview.js"></script>
+</body>
+
+</html>
